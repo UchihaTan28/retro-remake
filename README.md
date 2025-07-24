@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # YKungFu-Arcade
 
-THe arcade classic Yie Ar Kung-Fu's remake created in C++ using raylib.
+THe arcade classic Yie Ar Kung-Fu's remake created in C++ using raylib, originally created in assembly.
 
 ## Controls
 
@@ -17,5 +16,4 @@ THe arcade classic Yie Ar Kung-Fu's remake created in C++ using raylib.
 ![alt text](image-1.png)
 =======
 # retro-remake
-The arcade classic Yie-Ar Kung-Fu's remake.
->>>>>>> c8d20035344b7f02a624f08952eba20f4f48b6b6
+
