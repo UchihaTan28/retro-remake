@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "label": "Build YieArKungFu",
+            "type": "shell",
+            "command": "D:/UniOfLei/Study/Cpp/mingw32/bin/g++.exe",
+            "args": [
+                "-I", "D:/UniOfLei/Study/Cpp/raylib/include",
+                "-L", "D:/UniOfLei/Study/Cpp/raylib/lib",
+                "src/main.cpp",  // Add all source files here
+                "-o", "build/kungfu.exe",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-static-libgcc",
+                "-static-libstdc++"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }
+    ],
+    "version": "2.0.0"
+}
