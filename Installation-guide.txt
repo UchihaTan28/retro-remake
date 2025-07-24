@@ -1,0 +1,33 @@
+# 1. Update & install toolchain
+Install MSYS2(pacman) for cmnd line- https://www.msys2.org/
+
+Open MSYS2 MINGW64 (through start menu) and run-
+pacman -Syuu
+pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake mingw-w64-x86_64-raylib
+
+Open cmd- 
+cd /path/to/KungFu-Arcade and run-
+git clone https://github.com/raysan5/raylib.git (git prerequisite)
+cd raylib
+mkdir build && cd build
+
+cmake -G "MinGW Makefiles" -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release ..
+mingw32-make
+cd ../..
+
+
+# 2. Configure & build your game
+(Preferably use VS code)
+cd /path/to/KungFu-Arcade
+cmake -S . -B build -G "MinGW Makefiles"
+cmake --build build
+
+# 3. Run
+cd build
+./kungfu.exe
+
+OR 
+
+# 1. Extract the build.zip
+# 2. Put all the .dll files (from Kung-Fu arcade folder) in extracted build
+# 3. Run kungfu.exe
